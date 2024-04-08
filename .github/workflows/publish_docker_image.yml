@@ -2,7 +2,8 @@ name: Build Docker image
 
 on:
   push:
-    tags: ['v*']
+    tags: 
+    - "v*"
 
 jobs:
   build-amd:
