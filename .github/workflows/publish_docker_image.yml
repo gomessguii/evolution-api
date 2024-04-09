@@ -34,7 +34,7 @@ jobs:
           labels: ${{ steps.image-meta.outputs.labels }}
           platforms: linux/amd64
           push: true
-          tags: guinomotec/evolution-api:${{ github.ref }}
+          tags: guinomotec/evolution-api:${{ github.ref_name }}
 
   # build-arm:
   #   runs-on: buildjet-4vcpu-ubuntu-2204-arm
